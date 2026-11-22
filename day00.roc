@@ -26,28 +26,27 @@ run! = |args| {
 }
 
 day1 : Str -> Try(Str, _)
-day1 = |input| {
-	Err(TODO("Day1"))
+day1 = |_input| {
+	Err(Todo("Day1"))
 }
-
 
 day2 : Str -> Try(Str, _)
 day2 = |_input| {
-    Err(TODO("Day2"))
+	Err(Todo("Day2"))
 }
 
 example_input =
 	\\Example Input
 
-expect {
-	got = day1(example_input)?
-	got == "TODO"
-}
-
-expect {
-	got = day2(example_input)?
-	got == "TODO"
-}
+# expect {
+# 	got = day1(example_input)?
+# 	got == "TODO"
+# }
+#
+# expect {
+# 	got = day2(example_input)?
+# 	got == "TODO"
+# }
 
 parse_args = |args| {
 	if args.contains("-h") {
